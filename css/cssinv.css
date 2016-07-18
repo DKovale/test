@@ -1,0 +1,84 @@
+body {
+margin:0;
+padding:0;
+}
+#invision {
+border:1px solid gray;
+margin:0;
+padding:0;
+height:440px;
+width:100%;
+background-color:#323A45;
+font-family:"Segoe UI",arial,verdana,tahoma;}
+
+#invfont {
+padding-top:92px;
+text-align:center;
+color:white;
+font-size:26px;
+font-weight:100;
+}
+#invform {
+padding-top:35px;
+text-align:center;
+}
+
+.invbl1 {
+color:#9FA8AF;
+background: url("../img/chel.png") 2px 50% no-repeat;
+background-color:white;
+margin:3px;
+padding-left:45px;
+height:60px;
+width:16%;
+border-radius:5px;
+font-size:17px;
+}
+.invbl2 {
+color:#9FA8AF;
+background: url("../img/let.png") 4px 50% no-repeat;
+background-color:white;
+margin:3px;
+padding-left:45px;
+height:60px;
+width:16%;
+border-radius:5px;
+font-size:17px;
+}
+.invbl3 {
+color:#9FA8AF;
+background: url("../img/key.png") 2px 50% no-repeat;
+background-color:white;
+margin:3px;
+padding-left:40px;
+height:60px;
+width:16%;
+border-radius:5px;
+font-size:17px;
+}
+#invbtn {
+height:62px;
+width:16%;
+color:white;
+background-color:#FF3366;
+border-radius:7px;
+font-size:17px;
+border:1px solid #FF3366;
+transition:0.3s;
+}
+#invbtn:hover{
+background-color:#F42156;}
+
+#invdwn{
+margin-top:34px;
+text-align:center;
+color:#6D757D;
+font-size:12px;}
+
+#invlink {
+color:#6D757D;
+}
+
+#invlink:hover {
+color:white;
+}

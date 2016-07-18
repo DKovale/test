@@ -1,0 +1,93 @@
+body {margin:0;
+	padding:0;}
+.menu{height:50px;
+    margin:0;
+	padding:0;
+	background-color:white;
+    display:block;
+	color:#3C2F2F;
+	font-family:"Segoe UI",arial,verdana,tahoma;
+	font-size:16px;
+}
+
+#logo {
+height:23px;
+width:115px;}
+
+#logoli { 
+margin-left:50px;
+padding-top: 10px;
+width:145px;
+display:block;
+float:left;}
+
+.lvl1 {
+height::50px;
+width:110px;
+	margin:0;
+	padding:0 0 10px 0;
+}
+.menu li{
+    display: inline-block;
+    position: relative;
+    z-index:100;
+
+.subm {width:200px;
+	z-index:100;}
+	}
+.menu li a {
+    font-weight:400;
+	margin:0;
+	padding:0;
+    text-decoration:none;
+    padding:11px;
+    display:block;
+   	color:#3C2F2F;
+	font-family:"Segoe UI",arial,verdana,tahoma;
+	font-size:16px;
+ 
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+     transition:0.5s;
+}
+.menu li a:hover
+{ background-color:#F2F2F2;;}
+.menu li:hover > a {background-color:#F1F1F1;}
+
+.menu ul {
+	display: none;
+    margin: 0;
+    padding: 0;
+    width: 228px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+	    }
+/* показываем меню второго уровня при наведении */
+.menu li:hover > ul{
+    display: block;
+}
+.menu ul li {
+    display:block;
+    float: none;
+    background-color:yellow;
+    margin:0;
+    padding:0;
+}
+.menu ul li a {
+    font-size:18px;
+    font-weight:300;
+    display:block;
+    border-left:3px solid #ffffff;
+    background-color:#F1F1F1;
+}
+.menu ul li a:hover,
+.menu ul li:hover > a{
+    background-color:#C1C1C1;
+    border-left:1px solid #9CA3DA;
+    }
+
+.menu ul ul {
+    left:227px;
+    top: 0px;
+}
