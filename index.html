@@ -9,11 +9,27 @@
 	<link href="css/cssinv.css" rel="stylesheet" type="text/css" />
 	<link href="css/cssO.css" rel="stylesheet" type="text/css" />
 	<link href="css/cssap.css" rel="stylesheet" type="text/css" />
-   
+<script type="text/javascript"> 
+var flag = true;
+function showSrch() {
+    if(flag) {
+        document.getElementById('srch').style.display = 'block';
+        flag = false;
+    } else {
+        document.getElementById('srch').style.display = 'none';
+        flag = true;
+    }
+}
+</script> 
   </head>
   <body>
   <nav>
-  	<a id="logoli" href="https://www.microsoft.com"><img id="logo" src="img/microsoft.png"/></a>
+  <div id="blockr">
+   <span class="dd" onclick="showSrch()"><img src="img/search.png" width="20px" height="20px"/></span>
+   <span class="dd"><a href="https://www.microsoftstore.com/store?Action=DisplayPage&Locale=uk_UA&SiteID=msmea&id=ThreePgCheckoutShoppingCartPage"><img src="img/kor.jpg" width="20px" height="20px"/>0</span>
+   <span class="dd">  <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1468956642&rver=6.5.6509.0&wp=MBI&wreply=https:%2F%2Fwww.microsoft.com%2Fuk-ua%2F&lc=1033&id=74335"> Вхід </a></span>
+  </div>
+    	<a id="logoli" href="https://www.microsoft.com"><img id="logo" src="img/microsoft.png"/></a>
     <ul class="menu">
         
         <li class="lvl1">
@@ -99,8 +115,12 @@
         </li>
         
     </ul>
+	
+<div id="srch">
+	<form id="form1" method="get" action= "https://www.microsoft.com/uk-ua/search/result.aspx">  
+<input name="srch" id="form2" value=""  placeholder="Пошук на веб-сайті Microsoft.com"> 
+<input type="image" src="img/search.png" style="vertical-align: bottom;"  value="Поиск"></form> </div>
 </nav>
-
   
 <section id="ddb">
 <h1 id="hero1"> Безопасный доступ, синхронизация и совместная работа</h1>
@@ -248,8 +268,6 @@
 	</div>
 	
 </footer>
-<script type="text/javascript" src="/ac/globalfooter/2.0/en_US/scripts/ac-globalfooter.built.js"></script>
-
   
  </body>
 </html>
