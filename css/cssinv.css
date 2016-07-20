@@ -33,6 +33,7 @@ height:60px;
 width:16%;
 border-radius:5px;
 font-size:17px;
+min-width:160px;
 }
 .invbl2 {
 color:#9FA8AF;
@@ -44,6 +45,7 @@ height:60px;
 width:16%;
 border-radius:5px;
 font-size:17px;
+min-width:160px;
 }
 .invbl3 {
 color:#9FA8AF;
@@ -55,9 +57,10 @@ height:60px;
 width:16%;
 border-radius:5px;
 font-size:17px;
+min-width:160px;
 }
 #invbtn {
-height:62px;
+height:69px;
 width:16%;
 color:white;
 background-color:#FF3366;
@@ -65,6 +68,8 @@ border-radius:7px;
 font-size:17px;
 border:1px solid #FF3366;
 transition:0.3s;
+vertical-align: bottom;
+min-width:160px;
 }
 #invbtn:hover{
 background-color:#F42156;}
