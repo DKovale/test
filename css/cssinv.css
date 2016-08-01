@@ -15,7 +15,7 @@ font-family:"Segoe UI",arial,verdana,tahoma;}
 padding-top:92px;
 text-align:center;
 color:white;
-font-size:26px;
+font-size:1.625em;
 font-weight:100;
 }
 #invform {
@@ -32,7 +32,7 @@ padding-left:45px;
 height:60px;
 width:16%;
 border-radius:5px;
-font-size:17px;
+font-size:1.0625em;
 min-width:160px;
 }
 .invbl2 {
@@ -44,7 +44,7 @@ padding-left:45px;
 height:60px;
 width:16%;
 border-radius:5px;
-font-size:17px;
+font-size:1.0625em;
 min-width:160px;
 }
 .invbl3 {
@@ -56,16 +56,16 @@ padding-left:40px;
 height:60px;
 width:16%;
 border-radius:5px;
-font-size:17px;
+font-size:1.0625em;
 min-width:160px;
 }
 #invbtn {
 height:69px;
-width:16%;
+width:18%;
 color:white;
 background-color:#FF3366;
 border-radius:7px;
-font-size:17px;
+font-size:1.0625em;
 border:1px solid #FF3366;
 transition:0.3s;
 vertical-align: bottom;
@@ -78,7 +78,7 @@ background-color:#F42156;}
 margin-top:34px;
 text-align:center;
 color:#6D757D;
-font-size:12px;}
+font-size:0.75em;}
 
 #invlink {
 color:#6D757D;

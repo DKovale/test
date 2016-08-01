@@ -2,46 +2,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test</title>
+    <title>Priject</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/navcss.css" rel="stylesheet" type="text/css" />
 	<link href="css/cssdb.css" rel="stylesheet" type="text/css" />
 	<link href="css/cssinv.css" rel="stylesheet" type="text/css" />
 	<link href="css/cssO.css" rel="stylesheet" type="text/css" />
 	<link href="css/cssap.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript"> 
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+	 <script type="text/javascript" src="js/jqueryrotate.js"></script>
+	<script type="text/javascript">
 var flag = true;
-function showSrch() {
+function showSrch(x) {
     if(flag) {
-        document.getElementById('srch').style.display = 'block';
+        document.getElementById(x).style.display = 'block';
         flag = false;
     } else {
-        document.getElementById('srch').style.display = 'none';
+        document.getElementById(x).style.display = 'none';
         flag = true;
     }
+
 }
 </script> 
   </head>
   <body>
   <nav>
   <div id="blockr">
-   <span class="dd" onclick="showSrch()"><img src="img/search.png" width="20px" height="20px"/></span>
-   <span class="dd"><a href="https://www.microsoftstore.com/store?Action=DisplayPage&Locale=uk_UA&SiteID=msmea&id=ThreePgCheckoutShoppingCartPage"><img src="img/kor.jpg" width="20px" height="20px"/>0</span>
-   <span class="dd">  <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1468956642&rver=6.5.6509.0&wp=MBI&wreply=https:%2F%2Fwww.microsoft.com%2Fuk-ua%2F&lc=1033&id=74335"> Вхід </a></span>
+   <span class="dd" onclick="showSrch('srch')"><img src="img/search.png" width="20px" height="20px"/></span>
+   <span class="dd"><a href="https://www.microsoftstore.com/store?Action=DisplayPage&Locale=uk_UA&SiteID=msmea&id=ThreePgCheckoutShoppingCartPage"><img src="img/kor.jpg" width="20px" height="20px"/>0</a></span>
+   <span id="navmin" class="dd" onclick="showSrch('menu')" title="Показати меню"><img src="img/lines.jpg" width="20px" height="20px"/></span>
+   <span class="dd"><a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1468956642&rver=6.5.6509.0&wp=MBI&wreply=https:%2F%2Fwww.microsoft.com%2Fuk-ua%2F&lc=1033&id=74335"> Вхід </a></span>
   </div>
     	<a id="logoli" href="https://www.microsoft.com"><img id="logo" src="img/microsoft.png"/></a>
-    <ul class="menu">
-        
-        <li class="lvl1">
-            <a  href="#"><i class="icon-home"></i> Магазин</a>
+    <ul id="menu">        
+        <li class="lvl1">Магазин <img src="img/down.png" width="11px" height="11px"/>
             <ul class="subm">
                 <li class="lvl2">
                     <a href="http://www.microsoftstore.com/store/msmea/home/locale.uk_UA/ThemeID.27659900/mktp.UA/Currency.UAH">
 																	Домашня сторінка Магазину</a>
                 </li>
-                <li class="lvl2">
-                    <a href="#">Office</a>
-                    <ul>
+                <li class="lvl2"> Office
+                    <ul class="subm2">
 						<li><a href="http://www.microsoftstore.com/store/msmea/uk_UA/cat/Office/categoryID.67655100"> Всі версії Office</a></li> 
                         <li><a href="http://www.microsoftstore.com/store/msmea/uk_UA/list/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D1%96-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%B8-Office/categoryID.67662700/ThemeID.27659900/mktp.UA/Currency.UAH"> 
 								Програмні комплекси Office </a></li>
@@ -56,9 +58,8 @@ function showSrch() {
 								Мовні пакети Office</a></li>						
                     </ul>
                 </li>
-				 <li class="lvl2">
-                    <a href="#"> Windows</a>
-                    <ul>
+				 <li class="lvl2"> Windows
+                    <ul class="subm2">
 						<li><a href="http://www.microsoftstore.com/store/msmea/uk_UA/list/Windows-10-Home/categoryID.70050500/ThemeID.27659900/mktp.UA/Currency.UAH">
 								Windows 10 Home</a></li>
 						<li><a href="http://www.microsoftstore.com/store/msmea/uk_UA/list/Windows-10-Pro/categoryID.70047400/ThemeID.27659900/mktp.UA/Currency.UAH">
@@ -67,12 +68,10 @@ function showSrch() {
 			</ul></li>			
 						
         
-		 <li class="lvl1">
-            <a  href="#"><i class="icon-home"></i> Продукти</a>
-            <ul class="subm">
-                <li>
-                    <a href="#">  Програмне забезпечення та служби</a>
-					 <ul>
+		 <li class="lvl1"> Продукти<img src="img/down.png" width="11px" height="11px"/>
+					<ul class="subm">
+					<li class="lvl2"> Програмне забезпечення та служби
+					 <ul class="subm2">
 								<li><a href="//www.microsoft.com/uk-ua/windows"> Windows </a></li>
 								<li><a href="https://products.office.com/uk-UA/home?WT.mc_id=oan_winnav_office"> Office</a></li>
 								<li><a href="http://www.microsoft.com/uk-ua/download/default.aspx"> Безкоштовні завантаження та безпека </a></li>
@@ -81,15 +80,13 @@ function showSrch() {
 								<li><a href="http://www.skype.com/uk/"> Skype </a></li>
 								<li><a href="http://www.onenote.com/?WT.mc_id=oan_winnav_onenote"> OneNote </a></li></ul>
                      </li>
-					 <li class="lvl2">
-                    <a href="#"> Пристрої та Xbox</a>
-                    <ul>
+					 <li class="lvl2"> Пристрої та Xbox
+                    <ul class="subm2">
 								<li><a href="https://www.microsoft.com/hardware/uk-ua" > Комп’ютерні аксесуари</a></li>
 								<li><a href="http://www.microsoft.com/uk-ua/mobile/ " > Microsoft Lumia	</a></li></ul>
 					 </li>
-					 <li class="lvl2">
-                     <a href="#"> Для бізнесу</a>
-                     <ul>
+					 <li class="lvl2"> Для бізнесу
+                     <ul class="subm2">
 					 			<li><a href="http://azure.microsoft.com/uk-ua/" > Microsoft Azure</a></li>
 								<li><a href="http://www.microsoft.com/uk-ua/dynamics/default.aspx" > Microsoft Dynamics	</a></li>
 								<li><a href="https://www.microsoft.com/uk-ua/windows/business/default.aspx" > Windows для бізнесу </a></li>
@@ -98,20 +95,18 @@ function showSrch() {
 								<li><a href="https://www.microsoft.com/enterprise/uk-ua/default.aspx" > Корпоративні рішення</a></li>
 								<li><a href="http://www.microsoft.com/uk-ua/business/"> Рішення для малого бізнесу </a></li>
 								<li><a href="https://pinpoint.microsoft.com/uk-ua" > Знайти постачальника рішень</a></li></ul></li>
-					 <li class="lvl2">
-                     <a href="#"> Для IT-фахівців і розробників </a>	
-					 <ul>
+					 <li class="lvl2"> Для IT-фахівців і розробників	
+					 <ul class="subm2">
 								<li><a href="https://dev.windows.com/en-us" > Розробка програм Windows</a></li>
 								<li ><a href="http://azure.microsoft.com/uk-ua/" > Microsoft Azure </a></li>
 								<li><a href="https://msdn.microsoft.com/uk-ua/dn308572" > MSDN</a></li>
 								<li><a href="http://www.visualstudio.com/" > Visual Studio</a></li></ul></li>
-					<li class="lvl2">
-                     <a href="#"> Освіта </a>	
-								<ul><li><a href="https://www.microsoft.com/uk-ua/education/default.aspx" > Освіта </a></li></ul></li></ul>
+					<li class="lvl2"> Освіта 	
+					<ul class="subm2">
+								<li><a href="https://www.microsoft.com/uk-ua/education/default.aspx" > Освіта </a></li></ul></li></ul>
 														
         </li>
-        <li class="lvl1">
-            <a  href="#">Підтримка</a>
+        <li class="lvl1"> Підтримка
         </li>
         
     </ul>
@@ -119,7 +114,7 @@ function showSrch() {
 <div id="srch">
 	<form id="form1" method="get" action= "https://www.microsoft.com/uk-ua/search/result.aspx">  
 <input name="srch" id="form2" value=""  placeholder="Пошук на веб-сайті Microsoft.com"> 
-<input type="image" src="img/search.png" style="vertical-align: bottom;"  value="Поиск"></form> </div>
+<input type="image" src="img/search.png" style="vertical-align: bottom; background-color:#0078D7; padding:0;" value="Поиск"></form> </div>
 </nav>
   
 <section id="ddb">
@@ -175,9 +170,9 @@ function showSrch() {
 	
 	<footer>
 	<div id="ifooter">
-		<div class="ablock12">					
-			<ul class="alist1">
-				<li class="item1">Shop and Learn</li>
+		<div class="ablock12">	
+			<div class="item1">Shop and Learn <span class="plus">+</span>
+			<ul class="alist1">				
 				<li><a class="item" href="http://www.apple.com/mac/">Mac</a></li>
 				<li><a class="item" href="http://www.apple.com/ipad/">iPad</a></li>
 				<li><a class="item" href="http://www.apple.com/iphone/">iPhone</a></li>
@@ -188,12 +183,12 @@ function showSrch() {
 				<li><a class="item" href="http://www.apple.com/ipod/">iPod</a></li>
 				<li><a class="item" href="http://www.apple.com/shop/accessories/all-accessories">Accessories</a></li>
 				<li><a class="item" href="http://www.apple.com/shop/gift-cards">Gift Cards</a></li>
-			</ul>
+			</ul></div>
 		</div>
 	
-		<div class="ablock12">		
-			<ul class="alist1">
-				<li class="item1">Apple Store</li>
+		<div class="ablock12">	
+			<div class="item1">Apple Store <span class="plus">+</span>
+			<ul class="alist1">				
 				<li><a class="item" href="http://www.apple.com/retail/">Find a Store</a></li>
 				<li><a class="item" href="http://www.apple.com/retail/geniusbar/">Genius Bar</a></li>
 				<li><a class="item" href="http://www.apple.com/retail/learn/">Workshops and Learning</a></li>
@@ -204,50 +199,48 @@ function showSrch() {
 				<li><a class="item" href="http://www.apple.com/recycling/">Reuse and Recycling</a></li>
 				<li><a class="item" href="http://www.apple.com/shop/account/home">Order Status</a></li>
 				<li><a class="item" href="http://www.apple.com/shop/help">Shopping Help</a></li>
-			</ul>
+			</ul></div>
 		</div>
 	
-	<div class="ablock12">		
+	<div class="ablock12">	
+			<div class="item1">For Education <span class="plus">+</span>
 			<ul class="alist1">
-				<li class="item1">For Education</li>
 				<li><a class="item" href="http://www.apple.com/education/">Apple and Education</a></li>
 				<li><a class="item" href="http://www.apple.com/us-hed/shop">Shop for College</a></li>
-			</ul>
-			
-			<ul class="alist4">
-				<li class="item1">For Business</li>
+			</ul></div>
+			<div class="item1 alist4">For Business <span class="plus">+</span>
+			<ul class="alist1">				
 				<li><a class="item" href="http://www.apple.com/business/">Apple and Business</a></li>
 				<li><a class="item" href="http://www.apple.com/retail/business/">Shop for Business</a></li>
-			</ul>
+			</ul></div>
 		</div>
-	<div class="ablock12">		
-			<ul class="alist1">
-				<li class="item1">Account</li>
+	<div class="ablock12">	
+			<div class="item1">Account <span class="plus">+</span>
+			<ul class="alist1">				
 				<li><a class="item" href="https://appleid.apple.com/us/">Manage Your Apple ID</a></li>
 				<li><a class="item" href="http://www.apple.com/us-hed/shop/account/home">Apple Store Account</a></li>
 				<li><a class="item" href="https://www.icloud.com">iCloud.com</a></li>
-			</ul>
-				
-			<ul class="alist4">
-				<li class="item1">Apple Values</li>
+			</ul></div>
+			<div class="item1 alist4">Apple Values <span class="plus">+</span>
+			<ul class="alist1">				
 				<li><a class="item" href="http://www.apple.com/accessibility/">Accessibility</a></li>
 				<li><a class="item" href="http://www.apple.com/education/connectED/">Education</a></li>
 				<li><a class="item" href="http://www.apple.com/environment/">Environment</a></li>
 				<li><a class="item" href="http://www.apple.com/privacy/">Inclusion and Diversity</a></li>
 				<li><a class="item" href="http://www.apple.com/privacy/">Privacy</a></li>
 				<li><a class="item" href="http://www.apple.com/supplier-responsibility/">Supplier Responsibility</a></li>
-			</ul>
+			</ul></div>
 		</div>
-	<div class="ablock12">		
-			<ul class="alist1">
-				<li class="item1">About Apple</li>
+	<div id="smallw" class="ablock12">		
+			<div class="item1">About Apple <span class="plus">+</span>
+			<ul class="alist1">				
 				<li><a class="item" href="http://www.apple.com/about/">Apple Info</a></li>
 				<li><a class="item" href="http://www.apple.com/newsroom/">Newsroom</a></li>
 				<li><a class="item" href="http://www.apple.com/jobs/us/">Job Opportunities</a></li>
 				<li><a class="item" href="http://investor.apple.com">Investors</a></li>
 				<li><a class="item" href="http://www.apple.com/apple-events/">Events</a></li>
 				<li><a class="item" href="http://www.apple.com/contact/">Contact Apple</a></li>
-			</ul>
+			</ul></div>
 		</div>
 	</div>
 

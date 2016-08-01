@@ -1,20 +1,20 @@
 footer{
 	border:1px solid #F2F2F2;
-height:360px;
+height:370px;
 margin:0;
 padding:0;
 background-color:#F2F2F2;
 font-family:Arial;
-font-size:11px;
+font-size:0.6875em;
 line-height:2;
+min-width:740px;
 }
 
 #ifooter{
 height:267px;
-margin:29px 100px 0 60px;
-padding:27px 0 0 40px;
+margin:40px 0 10px 0;
+padding:0;
 vertical-align:bottom;
-min-width:800px;
 }
 
 .item {
@@ -24,23 +24,23 @@ color:#666667;
 .ablock12 {
 float:left;
 padding:0;
-margin:0 16px;
-width:125px;
+margin:0 2%;
+width:123px;
 }
-
+#smallw {width:90px;}
 
 .alist1 {
+font-size:11px;
 list-style-type:none;
 margin:0;
 padding:0;
 }
 .alist4 {
-list-style-type:none;
 margin:20px 0 0 0;
 padding:0;
 }
 #adown {
-margin:0 125px 0 110px;
+margin:10px 40px 0 20px;
 padding:0;
 color:#999999;
 }
@@ -75,4 +75,19 @@ cursor:pointer;
 float:right;
 display:block;
 }
+.plus {display:none;}
 
+@media (max-width:700px) {
+	footer {height:100%; min-width:99%;}
+	.alist1 {display:none;}
+	.item:hover{text-decoration:underline;}
+	.item1 {font-size:1.2em; border-bottom:1px solid #D6D6D6;width:100%; padding:5px; cursor:pointer;}
+	.ablock12, #smallw {float:none; width:100%;}
+	.alist4 {margin:0; padding:5px;}
+	#ifooter{height:100%; margin:27px 10px 0 0; padding:27px 0 0 10px;}
+	#adown {margin:25px 125px 0 30px;}
+	#usa {float:none; padding:7px 0;}
+	.item2 {border-bottom:none;}
+	.plus {margin-right:15px; display:block; float:right;}
+
+}

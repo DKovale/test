@@ -20,10 +20,10 @@ height:300px;
 .pic3 { 
 height:300px;
 padding-top:80px;
-		    text-align: center;
-		  	opacity:0.4;
-			transition:0.2s linear;
-			display:block;
+text-align: center;
+opacity:0.4;
+transition:0.2s linear;
+display:block;
 		  }
 .limits{position:relative;
 	background-color:black;
@@ -33,7 +33,7 @@ padding-top:80px;
 	 overflow:hidden;
 	 float:left; 
 	 display:block; 
-	 max-width:520px;
+	 max-width:620px;
 				  }  
 .texto {
 width:80%;
@@ -64,3 +64,7 @@ line-height:1.2
 			transform: scale(1.1,1.1);
 			opacity:1;
 					}
+@media (max-width:620px) {
+.limits {float:none; width:98%; display:block;}
+#ocul {height:100%;} 
+}
