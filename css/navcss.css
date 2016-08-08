@@ -1,4 +1,4 @@
-body {margin:0;
+body {margin:0 auto;
 	padding:0;
 	max-width:1200px;
 	font-size:16px;}
@@ -30,6 +30,11 @@ padding:9px 10px 0 8px;
 text-decoration:none;
 color:#3C2F2F;
 cursor:pointer;
+} 
+
+.dd a {
+text-decoration:none;
+color:#3C2F2F;
 } 
 
 #form1 {
